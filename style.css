@@ -1,0 +1,177 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0f172a;
+  color:white;
+}
+
+/* Navbar */
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+  background:#111827;
+  position:sticky;
+  top:0;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:600;
+  color:#38bdf8;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  transition:0.3s;
+}
+
+.navbar a:hover{
+  color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  min-height:90vh;
+  padding:50px 10%;
+  gap:50px;
+}
+
+.hero-text{
+  flex:1;
+}
+
+.hero-text h1{
+  font-size:50px;
+}
+
+.hero-text span{
+  color:#38bdf8;
+}
+
+.hero-text h3{
+  margin-top:10px;
+  font-size:30px;
+}
+
+.hero-text p{
+  margin-top:20px;
+  line-height:1.8;
+}
+
+.hero-text button{
+  margin-top:25px;
+  padding:12px 24px;
+  border:none;
+  background:#38bdf8;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.hero-text button:hover{
+  background:#0284c7;
+}
+
+.hero-image img{
+  width:350px;
+  border-radius:50%;
+  border:5px solid #38bdf8;
+}
+
+/* Sections */
+
+section{
+  padding:80px 10%;
+}
+
+section h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:36px;
+}
+
+/* Skills */
+
+.skill-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:20px;
+}
+
+.skill-card{
+  background:#1e293b;
+  padding:25px;
+  text-align:center;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+.skill-card:hover{
+  transform:translateY(-10px);
+  background:#38bdf8;
+}
+
+/* Projects */
+
+.project-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.project-card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+.project-card:hover{
+  transform:scale(1.05);
+}
+
+/* Contact */
+
+.contact{
+  text-align:center;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-text h1{
+    font-size:38px;
+  }
+
+  .hero-image img{
+    width:250px;
+  }
+
+  .navbar{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+}
